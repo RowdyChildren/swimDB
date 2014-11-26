@@ -1,0 +1,33 @@
+<%= form_for(@stime) do |f| %>
+  <% if @stime.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stime.errors.count, "error") %> prohibited this stime from being saved:</h2>
+
+      <ul>
+      <% @stime.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :meet_id %><br>
+    <%= f.number_field :meet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :swimmer_id %><br>
+    <%= f.number_field :swimmer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :stroke_id %><br>
+    <%= f.number_field :stroke_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

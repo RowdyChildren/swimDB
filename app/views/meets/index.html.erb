@@ -1,0 +1,27 @@
+<h1>Listing meets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @meets.each do |meet| %>
+      <tr>
+        <td><%= meet.name %></td>
+        <td><%= meet.location %></td>
+        <td><%= link_to 'Show', meet %></td>
+        <td><%= link_to 'Edit', edit_meet_path(meet) %></td>
+        <td><%= link_to 'Destroy', meet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Meet', new_meet_path %>
