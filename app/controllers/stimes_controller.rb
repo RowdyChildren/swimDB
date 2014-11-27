@@ -5,6 +5,9 @@ class StimesController < ApplicationController
   # GET /stimes.json
   def index
     @stimes = Stime.all
+    @meets = Meet.all
+    @strokes = Stroke.all
+    @swimmers = Swimmer.all
   end
 
   # GET /stimes/1
@@ -15,6 +18,9 @@ class StimesController < ApplicationController
   # GET /stimes/new
   def new
     @stime = Stime.new
+      @meets = Meet.all
+    @strokes = Stroke.all
+    @swimmers = Swimmer.all
   end
 
   # GET /stimes/1/edit

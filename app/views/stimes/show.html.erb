@@ -7,17 +7,17 @@
 
 <p>
   <strong>Meet:</strong>
-  <%= @stime.meet_id %>
+  <%= @stime.meet.name %>
 </p>
 
 <p>
   <strong>Swimmer:</strong>
-  <%= @stime.swimmer_id %>
+  <%= @stime.swimmer.name %>
 </p>
 
 <p>
   <strong>Stroke:</strong>
-  <%= @stime.stroke_id %>
+  <%= @stime.stroke.name %>
 </p>
 
 <%= link_to 'Edit', edit_stime_path(@stime) %> |

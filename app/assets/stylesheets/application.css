@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  background-color: #000;
+  color: #BBB;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h1 {
+  color: #BBB;
+
+}
+.container table, th, td {
+   border: 1px solid white;
+}
+
+a {
+	color: #BBB;
+}
+
+/*.nav {
+background-image: linear-gradient(#320C0C,#E71919 50%,#D70606) !important;
+background-repeat: no-repeat !important;
+border: 1px solid #000000 !important;
+}*/

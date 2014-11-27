@@ -1,15 +1,25 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #000;
+  color: #BBB;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-.container table, td {
-   border: 1px solid black;
+h1 {
+  color: #BBB;
+
+}
+.container table, th, td {
+   border: 1px solid white;
 }
 
+/*.nav {
+background-image: linear-gradient(#320C0C,#E71919 50%,#D70606) !important;
+background-repeat: no-repeat !important;
+border: 1px solid #000000 !important;
+}*/
+  
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -17,7 +27,7 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: #111111;
   padding: 10px;
   font-size: 11px;
 }

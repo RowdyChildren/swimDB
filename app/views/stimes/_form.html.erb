@@ -17,15 +17,15 @@
   </div>
   <div class="field">
     <%= f.label :meet_id %><br>
-    <%= f.number_field :meet_id %>
+    
+    <%= f.collection_select :meet_id, @meets, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :swimmer_id %><br>
-    <%= f.number_field :swimmer_id %>
-  </div>
+    <%= f.collection_select :swimmer_id, @swimmers, :id, :name %>  </div>
   <div class="field">
     <%= f.label :stroke_id %><br>
-    <%= f.number_field :stroke_id %>
+    <%= f.collection_select :stroke_id, @strokes, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>
